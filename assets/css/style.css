@@ -88,3 +88,12 @@ section {
     background-position: center;
 }
 /* Hero Styles End */
+
+/* Hero Form Style Start */
+.hero-form {
+    color: #024e76;
+    background-color: #fce138;
+    width: 500px;
+    padding: 20px;
+    border: solid 3px #024e76;
+}
