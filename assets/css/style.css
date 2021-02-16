@@ -86,6 +86,9 @@ section {
     height: 600px;
     background-size: cover;
     background-position: center;
+
+    /* relative position of container allows for absolute position of .hero-form */
+    position: relative;
 }
 /* Hero Styles End */
 
@@ -96,4 +99,9 @@ section {
     width: 500px;
     padding: 20px;
     border: solid 3px #024e76;
+
+    /* for absolute to work properly, .hero position: relative */
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
 }
