@@ -262,7 +262,7 @@ section {
     color: #fce138;
 }
 
-    /* 2-Column Layout */
+/* 2-Column Layout */
 .contact-info iframe {
     width: 400px;
     height: 400px;
@@ -276,14 +276,16 @@ section {
     margin: 30px 0 0 60px;
     color: white;
 }
-    /* 2-Column Layout End */
+
+/* 2-Column Layout End */
 
 .contact-info div h3 {
     color: #fce138;
     font-size: 32px;
 }
 
-.contact-info p, .contact-info address {
+.contact-info p,
+.contact-info address {
     margin: 20px 0;
     line-height: 1.5;
     font-size: 20px;
