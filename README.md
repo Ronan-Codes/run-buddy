@@ -11,4 +11,4 @@ A website that offers fitness training services.
 https://ronan-codes.github.io/run-buddy/
 
 ## Contribution
-Made with ❤️ by [Ronan Galvez]
+Made with ❤️ by Ronan Galvez
