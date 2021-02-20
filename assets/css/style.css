@@ -38,16 +38,27 @@ header nav {
     margin: 7px 0;
 }
 
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+/* removed to let ul be display:flex and flexwrap:wrap
 header nav ul li {
-    /* inline made each li element sit next to each other instead */
     display: inline;
 }
+*/
 
 header nav ul li a {
     /* margin provides space between each a element */
     margin: 0 30px;
     font-weight: lighter;
-    font-size: 22px;
+
+    /* viewport width */
+    font-size: 1.55vw;
 }
 
 /* footer styles start */
