@@ -12,3 +12,5 @@ https://ronan-codes.github.io/run-buddy/
 
 ## Contribution
 Made with ❤️ by Ronan Galvez
+
+### ©️2021 Run Buddy, Inc 
