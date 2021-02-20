@@ -67,17 +67,20 @@ footer {
     background: #fce138;
     width: 100%;
     padding: 40px 35px;
+
+    /* flex */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 footer h2 {
-    display: inline;
     color: #024e76;
     font-size: 30px;
     margin: 0;
 }
 
 footer div {
-    float: right;
     line-height: 1.5;
     text-align: right;
 }
@@ -95,28 +98,53 @@ section {
 /* Hero Style Start */
 .hero {
     background-image: url(../images/hero-bg-flipped.jpg);
+
+    /* removed to allow flex to work in .hero, along with position: relative */
         height: 600px;
     background-size: cover;
     background-position: center;
 
-    /* relative position of container allows for absolute position of .hero-form */
-    position: relative;
+    /* removed to allow flex to work in .hero */
+     /* relative position of container allows for absolute position of .hero-form */
+      /* position: relative; */
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-/* Hero Styles End */
+.hero-cta {
+    width: 35%;
+    text-align: right;
+    margin: 3.5%;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+.hero-cta h2 {
+    font-style: italic;
+    font-size: 55px;
+    color: #fce138;
+}
 
 /* Hero Form Style Start */
 .hero-form {
     color: #024e76;
     background-color: #fce138;
-    width: 500px;
+    width: 40%;
+    margin: 3.5%;
     padding: 20px;
     border: solid 3px #024e76;
 
-    /* for absolute to work properly, .hero position: relative */
+    /* disabled for flex property
+          for absolute to work properly, .hero position: relative
     position: absolute;
     bottom: 120px;
     right: 140px;
+
+    width: 500px;
+    */
 }
 
 .hero-form h3 {
