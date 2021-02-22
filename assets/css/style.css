@@ -54,7 +54,7 @@ header nav ul li {
 
 header nav ul li a {
     /* margin provides space between each a element */
-    margin: 0 30px;
+    padding: 10px 15px;
     font-weight: lighter;
 
     /* viewport width */
@@ -100,17 +100,18 @@ section {
     background-image: url(../images/hero-bg-flipped.jpg);
 
     /* removed to allow flex to work in .hero, along with position: relative */
-        height: 600px;
+    height: 600px;
     background-size: cover;
     background-position: center;
 
     /* removed to allow flex to work in .hero */
-     /* relative position of container allows for absolute position of .hero-form */
-      /* position: relative; */
+    /* relative position of container allows for absolute position of .hero-form */
+    /* position: relative; */
 
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 .hero-cta {
@@ -119,7 +120,7 @@ section {
     margin: 3.5%;
     color: #fff;
     font-size: 18px;
-    line-height: 1.3;
+    line-height: 1.2;
 }
 
 .hero-cta h2 {
@@ -186,7 +187,7 @@ section {
 } */
 
 .section-title {
-    font-size: 55px;
+    font-size: 48px;
     color: #024e76;
     /* margin-bottom: 35px; */
     /* padding: 0 100px 20px 100px; */
@@ -249,7 +250,7 @@ section {
     margin-right: 20px;
 }
 
-.step-im img{
+.step-im img {
     max-width: 100%;
 }
 
@@ -338,7 +339,7 @@ section {
     flex-wrap: wrap;
 }
 
-.contact-info > * {
+.contact-info>* {
     flex: 1;
     margin: 15px;
 }
@@ -378,7 +379,8 @@ section {
     color: #fce138;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
     border: 1px solid #024e76;
     display: block;
     padding: 7px 15px;
@@ -412,4 +414,28 @@ section {
 
 .flex-row {
     display: flex;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header h1 a {
+        /* this will be applied on any screen smaller than 980px */
+
+    }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    header h1 {
+        /* applied on screens between 768px and 575px */
+
+    }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    header h1 {
+        /* this will be applied on any screen smaller than 575px */
+        
+    }
 }
