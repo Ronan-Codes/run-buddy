@@ -20,6 +20,18 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    /* Sticky Header */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+
+    /* From Hero */
+    background-image: url("../images/hero-bg-flipped.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
 }
 
 header h1 {
@@ -27,6 +39,7 @@ header h1 {
     font-size: 36px;
     color: #fce138;
     margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header a {
@@ -59,6 +72,14 @@ header nav ul li a {
 
     /* viewport width */
     font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a:hover {
+    background: #fce138;
+    color: #024e76;
+    border-radius: 15px;
+    text-shadow: none;
 }
 
 /* footer styles start */
@@ -97,12 +118,12 @@ section {
 
 /* Hero Style Start */
 .hero {
+    /* Same as Header, so it image connects */
     background-image: url(../images/hero-bg-flipped.jpg);
-
-    /* removed to allow flex to work in .hero, along with position: relative */
-    /* height: 600px; */
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
 
     /* removed to allow flex to work in .hero */
     /* relative position of container allows for absolute position of .hero-form */
@@ -112,6 +133,7 @@ section {
     justify-content: center;
     flex-wrap: wrap;
     align-items: flex-start;
+
 }
 
 .hero-cta {
@@ -127,16 +149,19 @@ section {
     font-style: italic;
     font-size: 55px;
     color: #fce138;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Hero Form Style Start */
 .hero-form {
     color: #024e76;
-    background-color: #fce138;
+    background-color: rgba(252, 225, 56, 0.8);
     width: 40%;
     margin: 3.5%;
     padding: 20px;
     border: solid 3px #024e76;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
 
     /* disabled for flex property
           for absolute to work properly, .hero position: relative
@@ -165,6 +190,13 @@ section {
     color: #024e76;
     width: 100%;
     margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.form-input:focus {
+    background-color: rgba(255, 255, 255, 1);
+    outline: none;
 }
 
 .hero-form label {
@@ -177,6 +209,11 @@ section {
     font-size: 16px;
     border: none;
     padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.hero-form button:hover {
+    background-color: #39a6b2;
 }
 
 /* Hero Styles End */
@@ -222,11 +259,18 @@ section {
     margin: 50px auto;
     padding-bottom: 50px;
     width: 80%;
-    border-bottom: 1px solid #39a6b2;
+
+    /* Added to step:last-child */
+    /* border-bottom: 1px solid #39a6b2; */
+
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+}
+
+.step:not(:last-child) {
+    border-bottom: 1px solid #39a6b2;
 }
 
 .step h3 {
@@ -387,6 +431,14 @@ section {
     width: 100%;
     margin-bottom: 15px;
     margin-top: 5px;
+    border-radius: 10px;
+    background-color:rgba(255, 255, 255, 0.75)
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    background-color: rgba(255, 255, 255, 1);
+    outline: none;
 }
 
 .contact-form button {
@@ -397,6 +449,12 @@ section {
     text-align: center;
     padding: 15px 0;
     font-size: 16px;
+    border-radius: 10px;
+}
+
+.contact-form button:hover {
+    color: #fce138;
+    background: #39a6b2;
 }
 
 /* Reach Out Styles End */
@@ -421,6 +479,9 @@ section {
     header {
         padding-bottom: 0;
         justify-content: center;
+
+        /* Undo Sticky Header */
+        position: rel;
     }
 
     header h1 {
